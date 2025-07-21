@@ -3,5 +3,5 @@ User-agent: *
 Allow: /
 
 # Point to the sitemap file.
-# IMPORTANT: Replace "https://your-domain.com" with your actual domain name when you publish the site.
-Sitemap: https://your-domain.com/sitemap.xml
+# IMPORTANT: Replace "https://dan-hgy.github.io/portfolio/#home" with your actual domain name when you publish the site.
+Sitemap: https://dan-hgy.github.io/portfolio/#home/sitemap.xml

@@ -1,0 +1,7 @@
+# Allow all search engines to crawl the entire site.
+User-agent: *
+Allow: /
+
+# Point to the sitemap file.
+# IMPORTANT: Replace "https://your-domain.com" with your actual domain name when you publish the site.
+Sitemap: https://your-domain.com/sitemap.xml

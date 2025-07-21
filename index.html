@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Daniel Vasilishin</title>
+
+    <meta name="description"
+        content="Portfolio of Daniel Vasilishin, a motivated Full-Stack Development student showcasing projects in HTML, CSS, and more. Seeking a junior developer position.">
+    <meta name="keywords"
+        content="Daniel Vasilishin, portfolio, web developer, full-stack developer, junior developer, HTML, CSS, JavaScript, Git, GitHub">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <input type="checkbox" id="theme-toggle" style="display: none;">
+    <div class="content-wrapper">
+
+        <div class="fixHeader">
+            <header class="site-header">
+                <nav>
+                    <input type="checkbox" id="hamburger-toggle" style="display: none;">
+                    <label for="hamburger-toggle" class="hamburger">&#9776;</label>
+                    <ul class="leftNav">
+                        <li>
+                            <a href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                    </ul>
+                    <a href="#home" class="logo"> <span></span>Daniel</a>
+                    <ul class="rightNav">
+                        <li>
+                            <a href="#project">Project</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact Me</a>
+                        </li>
+                    </ul>
+                    <ul class="mobile-nav">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#project">Project</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <main class="description" id="home">
+            <div class="containerOutline">
+                <div class="containerStyleMain">
+                    <h1>I'm Daniel Vasilishin</h1>
+                    <h2>Web<br>Developers</h2>
+                </div>
+            </div>
+            <div class="containerBack"></div>
+            <div class="containerPhoto">
+                <img src="image/profilePhoto.PNG" loading="lazy" alt="profilePhoto">
+            </div>
+        </main>
+
+        <section class="aboutMe" id="about">
+            <h3>About Me</h3>
+
+            <p>
+                My name is Daniel, a motivated Full-Stack Development student at HackerU and the Open
+                University of Israel. With a background in IT Support and Manual QA, I bring a unique perspective on
+                user
+                needs
+                and software quality.
+
+                I am a fast learner and a collaborative team player with excellent communication skills, always eager to
+                explore
+                new technologies.
+
+                I am actively seeking an internship or a junior developer position where I can contribute to a team and
+                continue
+                my professional growth.
+            </p>
+
+            <h4>Skills:</h4>
+            <ul class="skillsList">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+                <li>C</li>
+                <li>Git & GitHub</li>
+        </section>
+
+        <section id="project">
+            <div class="firstProject"><img src="image/firstProject.png" loading="lazy" alt="MyFirstProject">
+                <p class="aboutProject">"This is my first project, a personal portfolio website. It was built entirely
+                    from
+                    scratch using only HTML and CSS and meets modern web development standards, including a fully
+                    responsive
+                    design for all devices."</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h5>Contact Me:</h5>
+            <div class="boxStyle">
+                <form action="">
+                    <label class="name" for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label class="email" for="email">Email:</label>
+                    <input type="text" id="email" name="email" required>
+                    <label for="ReasonForReferral">Reason For Referral (Max length 200):</label>
+                    <textarea name="ReasonForReferral" id="ReasonForReferral" maxlength="200"></textarea>
+                    <input type="submit" value="Send">
+                </form>
+                <p class="conMassage">Thank you for contacting me. I will get back to you soon.</p>
+            </div>
+        </section>
+
+        <footer class="site-footer">
+            <p>© 2025 Daniel Vasilishin. All rights reserved.</p>
+            <div class="visitMe">
+                <h6>My:</h6>
+                <a href="http://linkedin.com/in/dani7777" class="linkedIn">LinkedIn</a>
+                <a href="https://github.com/Dan-hgy" class="github">GitHub</a>
+            </div>
+        </footer>
+
+        <a href="#home" class="back-to-top" aria-label="backToTop">&#8679;</a>
+        <label for="theme-toggle" class="theme-toggle-button" aria-label="changeTheme"><span>🌙</span></label>
+
+    </div>
+</body>
+
+</html>

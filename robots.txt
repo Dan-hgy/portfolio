@@ -1,7 +1,4 @@
-# Allow all search engines to crawl the entire site.
 User-agent: *
 Allow: /
 
-# Point to the sitemap file.
-# IMPORTANT: Replace "https://dan-hgy.github.io/portfolio/#home" with your actual domain name when you publish the site.
-Sitemap: https://dan-hgy.github.io/portfolio/#home/sitemap.xml
+Sitemap: https://dan-hgy.github.io/portfolio/sitemap.xml

@@ -169,14 +169,14 @@ nav {
 h1 {
     font-size: 2rem;
     text-align: center;
-    margin-left: 5rem;
+    margin-right: 5rem;
     line-height: 2;
 }
 
 h2 {
     font-size: 3.5rem;
     text-align: left;
-    margin-left: 25rem;
+    margin-left: 15rem;
 }
 
 .containerPhoto {

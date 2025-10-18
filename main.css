@@ -280,7 +280,6 @@ h4 {
     border-radius: 1rem;
     margin: 1.25rem;
     border: 1px solid var(--primary-text-color);
-    transition: transform 0.3s ease;
 }
 
 .firstProject img {
@@ -296,8 +295,39 @@ h4 {
     padding: 0.625rem;
 }
 
-.firstProject:hover {
-    transform: scale(1.05);
+.project-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.625rem;
+}
+
+.live {
+    width: 70px;
+    height: 25px;
+    background-color: lightgrey;
+    color: black;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 3px;
+    transition: transform 0.3s ease;
+}
+
+.git {
+    width: 70px;
+    height: 25px;
+    background-color: lightgrey;
+    color: black;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 3px;
+    transition: transform 0.3s ease;
+}
+
+.git:hover,
+.live:hover {
+    transform: scale(1.3);
 }
 
 /* End of Project Style */

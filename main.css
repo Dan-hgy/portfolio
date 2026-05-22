@@ -28,12 +28,12 @@ html {
     scroll-behavior: smooth;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
+.name-title,
+.developer-title,
+.about-title,
+.skills-title,
+.contact-title,
+.link-title,
 .logo {
     font-family: 'Montserrat', sans-serif;
 }
@@ -166,14 +166,14 @@ nav {
     box-sizing: border-box;
 }
 
-h1 {
+.name-title {
     font-size: 2rem;
     text-align: center;
     margin-right: 5rem;
     line-height: 2;
 }
 
-h2 {
+.developer-title {
     font-size: 3.5rem;
     text-align: left;
     margin-left: 15rem;
@@ -232,7 +232,7 @@ img {
     border-radius: 1rem;
 }
 
-h3 {
+.about-title {
     color: var(--secondary-text-color);
     padding: 1rem;
     font-size: 2rem;
@@ -246,7 +246,7 @@ p {
     text-align: justify;
 }
 
-h4 {
+.skills-title {
     color: var(--secondary-text-color);
     padding: 1rem;
     font-size: 1.5rem;
@@ -273,16 +273,22 @@ h4 {
         linear-gradient(var(--primary-bg-color), var(--primary-bg-color)) padding-box,
         linear-gradient(to left, var(--gradient-color-1), var(--gradient-color-2)) border-box;
     border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
 }
 
-.firstProject {
+.project {
     width: 19.375rem;
+    height: 32.50rem;
     border-radius: 1rem;
     margin: 1.25rem;
     border: 1px solid var(--primary-text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.firstProject img {
+.project img {
     width: 18.75rem;
     height: 11.25rem;
     margin: 0.3125rem;
@@ -297,32 +303,32 @@ h4 {
 
 .project-container {
     display: flex;
-    justify-content: space-around;
-    padding: 0.625rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem;
+    margin-top: auto;
 }
 
-.live {
-    width: 70px;
-    height: 25px;
-    background-color: lightgrey;
-    color: black;
-    border-radius: 25px;
-    text-align: center;
-    text-decoration: none;
-    padding-top: 3px;
-    transition: transform 0.3s ease;
-}
-
+.live,
 .git {
-    width: 70px;
-    height: 25px;
+    width: 80px;
+    height: 32px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
     background-color: lightgrey;
     color: black;
     border-radius: 25px;
     text-align: center;
     text-decoration: none;
-    padding-top: 3px;
     transition: transform 0.3s ease;
+}
+
+.git:hover,
+.live:hover {
+    transform: scale(1.3);
 }
 
 .git:hover,
@@ -345,7 +351,7 @@ h4 {
     border-radius: 1rem;
 }
 
-h5 {
+.contact-title {
     padding: 0.625rem;
     font-size: 1.5rem;
 }
@@ -431,7 +437,7 @@ section[id] {
     align-items: center;
 }
 
-h6 {
+.link-title {
     margin-right: 0.625rem;
     font-size: 1.2rem;
 }
@@ -620,17 +626,17 @@ h6 {
     }
 
     /* H styles */
-    h1,
-    h2 {
+    .name-title,
+    .developer-title {
         margin-left: 0;
         text-align: center;
     }
 
-    h1 {
+    .name-title {
         font-size: 1.8rem;
     }
 
-    h2 {
+    .developer-title {
         font-size: 2.5rem;
     }
 
@@ -677,13 +683,14 @@ h6 {
     /* Project style  */
     #project {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 1rem;
     }
 
-    .firstProject {
-        margin: 0;
+    .project {
+        margin: 1rem;
     }
 
     /* Form style */

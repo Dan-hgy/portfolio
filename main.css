@@ -266,7 +266,7 @@ p {
 /* Start Project Style */
 #project {
     width: 90vw;
-    height: 43.75rem;
+    min-height: 43.75rem;
     margin: 1rem auto;
     border: 0.3rem solid transparent;
     background:
@@ -275,6 +275,9 @@ p {
     border-radius: 1rem;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .project {
